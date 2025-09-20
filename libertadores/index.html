@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="el">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libertadores</title>
+    <meta name="description" content="Discover the libertadores family in Greece. We talk about football, drinks, and life. Join us.">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.liber.jpeg" alt="logo">
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#info">Info</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="burger" onclick="toggleSidebar()">☰</div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+      <div class="close-btn" onclick="toggleSidebar()">✖</div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#info">Info</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("open");
+      }
+    </script>
+    <div id="home" class="container-header">
+      <div class="row-text">
+        <h1>Libertadores</h1>
+        <h2>Football and pleasure</h2>
+      </div>
+    </div>
+
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/liber2.jpeg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/liber3.jpeg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./images/liber5.jpeg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main class="text-center">
+      <section id="about" class="container bg-light my-5 p-3">
+        <h3 class="display-6 text-danger mb-4">ABOUT US</h3>
+        <div class="row g-3 justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <!--<h4>Many years of experience</h4>
+            <p>
+              Over 20 years of experience in hospitality, offering comfort, 
+              cleanliness, and exceptional service for a truly unforgettable stay.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <h4>Rooms close to port</h4>
+            <p>
+              Cozy and comfortable rooms just minutes from the port, 
+              ideal for travelers seeking convenience, relaxation, and easy access.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <h4>Friendly prices</h4>
+            <p>
+              Enjoy high-quality accommodation with friendly prices, 
+              perfect for budget-conscious travelers who don’t want to compromise on comfort.
+            </p>-->
+                <h4>Welcome to the Libertadores</h4>
+                <p>
+                    Δύο φίλοι απο τα παλιά αποφάσισαν να δημιουργήσουν αυτό το κανάλι. Λάτρεις της μπάλας, των ποτών και της ζωής. Για να δούμε αν μπορούν!
+                </p>
+           </div>
+           <div class="col-sm-12 col-md-6 col-lg-4">
+            <h4>Τάκλιν στο γόνατο</h4>
+            <p>
+              Γιατί πήρε κίτρινη? Που πήγε το ανδρικό ποδόσφαιρο? Το χταποδάκι απέναντι κοζάρει! Διάολε, το ουίσκι πίνεται σκέτο.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="gallery-section">
+      <h3 class="gallery-title">Join our team</h3>
+      <div class="photo-gallery">
+        <div class="photo"><img src="./images/liber1.jpeg" alt="Photo 1" /></div>
+        <div class="photo"><img src="./images/liber2.jpeg" alt="Photo 2" /></div>
+        <div class="photo"><img src="./images/liber3.jpeg" alt="Photo 3" /></div>
+        <div class="photo"><img src="./images/liber4.jpeg" alt="Photo 4" /></div>
+        <div class="photo"><img src="./images/liber5.jpeg" alt="Photo 5" /></div>
+      </div>
+    </div>
+         <div id="info" class="info-section">
+            <h3 class="section-title">Team info</h3>
+          
+            <div class="info-wrapper">
+              <div class="info-box">
+                <ul class="features-list">
+                  <li><span class="tick-icon">✔</span> Ποδόσφαιρο</li>
+                  <li><span class="tick-icon">✔</span> Νύχτα</li>
+                  <li><span class="tick-icon">✔</span> Δωμάτιο με θέα</li>
+                  <li><span class="tick-icon">✔</span> Money laundry</li>
+                </ul>
+              </div>
+        
+              <div class="info-box">
+                <ul class="features-list">
+                  <li><span class="tick-icon">✔</span> Ποτά</li>
+                  <li><span class="tick-icon">✔</span> Κουβέντα</li>
+                  <li><span class="tick-icon">✔</span> Γυναίκες</li>
+                  <li><span class="tick-icon">✔</span> Good Vibes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <section id="contact" class="container-contact bg-light my-5 p-3">
+        <h3 class="display-6 text-danger">Contact</h3>
+        <!--<p>We will be happy to contact with us for more informations!</p>-->
+        <p>Για τις φίλες μας!</p>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <i class="bi bi-telephone-fill text-danger"></i>
+                <h4>Telephone</h4>
+                <a href="#">21020202020</a>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-whatsapp text-danger"></i>
+                <h4>Whatsapp</h4>
+                <a href="#">21020202020</a>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-envelope text-danger"></i>
+                <h4>Email</h4>
+                <a href="#">info@libertadores</a>
+            </div>
+        </div>
+        
+    </section>
+    
+</main>
+
+<footer class="footer">
+  <div class="footer-title">Libertadores</div>
+  
+  <div class="footer-container">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#info">Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <a href="tel:+123456789" class="contact-link">
+              <i class="fa-solid fa-phone"></i> +123 456 789
+            </a>
+          </li>
+          <li>
+            <a href="mailto:captain@mail" class="contact-link">
+              <i class="fa-regular fa-envelope"></i> libertadores@mail
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    defer></script>
+  </body>
+</html>
